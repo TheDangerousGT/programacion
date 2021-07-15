@@ -26,12 +26,12 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_num_rows($resultado);
 
 if($filas){
-  
-  echo "<script> alert('Bienvenido $usuario');
-  location.href = 'welcome.php';
+  header('location:welcome.php');
+  echo "<script> alert('Bienvenido'.$usuario.);
   </script>";
 
 }else{
+  header("location:index.php");
   include("index.php");
   echo "<script>
   Swal.fire({
