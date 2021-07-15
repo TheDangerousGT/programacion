@@ -37,7 +37,7 @@ if($filas){
   Swal.fire({
     icon: 'error',
     title: 'Oops...',
-    text: 'Usuario no encontrado ¡404!',
+    text: 'Usuario no encontrado Error ¡404!',
     footer: '<a href=signup.php>¿No tienes una cuenta? Registrate</a>',
   })</script>";
 }
